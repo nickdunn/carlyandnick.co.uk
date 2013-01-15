@@ -4,7 +4,7 @@ $blue-base: #0f5985;
 $blue-dark: #073452;
 
 html {
-  background: $blue-base url(../images/bg.png) 0 0 repeat-x;
+  background: $blue-base url(/images/bg.png) 0 0 repeat-x;
   font-size: 14px;
   line-height: 1.4;
   margin: 0;
@@ -144,7 +144,7 @@ section {
 }
 
 #home {
-  background: url(../images/stars-light.png) 50% 50% no-repeat;
+  background: url(/images/stars-light.png) 50% 50% no-repeat;
 
   .inner {
     padding-top: 10%;
@@ -199,9 +199,9 @@ section {
 }
 
 #bride-groom {
-  background: url(../images/stars-dark.png) 50% 20% no-repeat;
+  background: url(/images/stars-dark.png) 50% 20% no-repeat;
   background-size: contain;
-  
+
 
   img {
     margin-bottom: 1em;
@@ -210,7 +210,7 @@ section {
 }
 
 #contact {
-  background: url(../images/stars-dark.png) 50% 50% no-repeat;
+  background: url(/images/stars-dark.png) 50% 50% no-repeat;
   background-size: contain;
   max-height: 300px;
   overflow: hidden;
@@ -251,14 +251,14 @@ section {
   }
 
   #wedding {
-    margin-bottom: -6em; 
+    margin-bottom: -6em;
   }
 
   #bride-groom {
     background: none;
 
     .half {
-      background: url(../images/stars-dark.png) 50% 20% no-repeat;
+      background: url(/images/stars-dark.png) 50% 20% no-repeat;
     }
   }
 
