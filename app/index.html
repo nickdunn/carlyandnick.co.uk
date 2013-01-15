@@ -16,6 +16,10 @@
   <script src="scripts/vendor/jquery.smoothscroll.js"></script>
   <script type="text/javascript">
   $(function() {
+    setTimeout(function(){
+      // Hide the address bar!
+      window.scrollTo(0, 1);
+    }, 0);
     $('#primary-nav a').smoothScroll({
       offset: -30
     });
@@ -67,7 +71,7 @@
         <p class="aside">(The Groom)</p>
         <dl>
           <dt>Best Man</dt>
-          <dd>Andy Smith <span class="aside">Arch Nemesis of Groom</span></dd>
+          <dd>Andy Smith <span class="aside">Passing Acquaintance of Groom</span></dd>
         </dl>
         <dl>
           <dt>Ushers</dt>
