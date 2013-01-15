@@ -13,8 +13,10 @@
   <link rel="stylesheet" href="styles/a6671143.main.css">
   <script src="scripts/vendor/cf69c6f2.modernizr.min.js"></script>
   <script src="scripts/vendor/8bc61845.jquery.min.js"></script>
+  <script src="scripts/vendor/4b428a7f.jquery.smoothscroll.js"></script>
   <script type="text/javascript">
   $(function() {
+    $('#primary-nav a').smoothScroll();
     var random = Math.floor(Math.random() * 8) + 1;
     $('#carly').prepend('<img src="pics/carly-'+random+'.png" alt="Carly" />');
     $('#nick').prepend('<img src="pics/nick-'+random+'.png" alt="Nick" />');
