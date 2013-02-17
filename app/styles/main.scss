@@ -37,9 +37,12 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   color: #fff;
   border: none;
+  -webkit-transition: border-color 0.2s ease-in;
+  transition: border-color 0.2s ease-in;
 
   &:hover {
     border-color: #fff;
+    color: #fff;
   }
 }
 
@@ -223,8 +226,6 @@ section {
 
     a {
       border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-      -webkit-transition: border-color 0.2s ease-in;
-      transition: border-color 0.2s ease-in;
 
       &:hover {
         border-color: rgba(255, 255, 255, 0.6);
