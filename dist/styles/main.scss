@@ -36,6 +36,7 @@ a {
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   color: #fff;
+  border: none;
 
   &:hover {
     border-color: #fff;
@@ -46,6 +47,7 @@ img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  border: none;
 }
 
 .large {
@@ -202,11 +204,33 @@ section {
   background: url(/images/stars-dark.png) 50% 20% no-repeat;
   background-size: contain;
 
-
   img {
     margin-bottom: 1em;
   }
 
+}
+
+#hotels {
+  p {
+    margin: 10px 0 30px 0;
+    width: 33%;
+    float: left;
+
+    .aside {
+      display: block;
+      margin-top: 5px;
+    }
+
+    a {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      -webkit-transition: border-color 0.2s ease-in;
+      transition: border-color 0.2s ease-in;
+
+      &:hover {
+        border-color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
 }
 
 #contact {
