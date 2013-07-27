@@ -9,11 +9,16 @@
   <title>Carly &amp; Nick</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <!-- build:css({.tmp,app}) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
   <script src="scripts/vendor/modernizr.min.js"></script>
   <script src="scripts/vendor/jquery.min.js"></script>
   <script src="scripts/vendor/jquery.smoothscroll.js"></script>
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
   <script type="text/javascript">
   $(function() {
     setTimeout(function(){
@@ -33,18 +38,18 @@
 
   <nav id="primary-nav">
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#wedding">Save the Date</a></li>
-      <li><a href="#bride-groom">Bride &amp; Groom</a></li>
-      <li><a href="#hotels">Accommodation</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li class="right li-1"><a href="#bride-groom">Bride &amp; Groom</a></li>
+      <li class="right li-2"><a href="#wedding">Where &amp; When</a></li>
+      <li class="icon"><img src="/images/icon.png"/></li>
+      <li class="left li-3"><a href="#hotels">Accommodation</a></li>
+      <li class="left li-4"><a href="#contact">RSVP</a></li>
     </ul>
   </nav>
 
   <section id="home">
     <div class="inner">
-      <img src="images/carly-and-nick.png" alt="Carly &amp; Nick" />
-      <p>Are getting married <span class="aside">(Yay!)</span></p>
+      <p class="hero">Carly <span class="aside">&amp;</span> Nick</p>
+      <p class="sub">Are getting married <span class="aside">(Yay!)</span></p>
     </div>
   </section>
 
@@ -89,16 +94,16 @@
     <div class="inner">
 
       <div class="half">
-        <h2>Save the Date*</h2>
+        <h2>The Day</h2>
         <p class="large">Saturday<br/> 2<sup>nd</sup> November 2013</p>
-        <p class="aside small">*by invitation only, of course</p>
+        <p class="aside">at 1.30pm for a 2pm ceremony,<br/> evening reception guests 7pm</p>
         <p class="countdown"><span id="days-to-go">298</span> <span class="label">days to go!</span></p>
       </div>
 
       <div class="half">
         <h2>The Venue</h2>
-        <p class="large">Notley Tythe Barn</p>
-        <p class="aside">Long Crendon, HP18 9ER, <a href="https://maps.google.co.uk/maps?q=Notley+Tythe+Barn,+Long+Crendon&hl=en&ll=51.77724,-0.969071&spn=0.015188,0.038452&sll=52.842595,-0.197754&sspn=7.595461,19.6875&oq=Notley+Tythe+Barn,+Lon&hq=Notley+Tythe+Barn,+Long+Crendon&t=m&z=15&iwloc=A">map</a></p>
+        <p class="large"><a href="http://notleyfarm.co.uk">Notley Tythe Barn</a></p>
+        <p class="aside">Long Crendon, Buckinghamshire,<br/> HP18 9ER (<a href="https://maps.google.co.uk/maps?q=Notley+Tythe+Barn,+Long+Crendon&hl=en&ll=51.77724,-0.969071&spn=0.015188,0.038452&sll=52.842595,-0.197754&sspn=7.595461,19.6875&oq=Notley+Tythe+Barn,+Lon&hq=Notley+Tythe+Barn,+Long+Crendon&t=m&z=15&iwloc=A">directions</a>)</p>
         <img class="map" src="images/map.png" alt="" />
       </div>
 
@@ -108,7 +113,8 @@
   <section id="hotels">
     <div class="inner">
 
-      <h2>Coming far?</h2>
+      <h2>Accommodation</h2>
+      <p class="aside">Here are our favourite hotels within a short taxi ride of the barn. We have reserved groups of rooms at some of these hotels for larger parties travelling together — details are included with your invitation</p>
 
       <p class="hotel full">
         <a href="http://themoleandchicken.co.uk/accommodation" class="large">The Mole &amp; Chicken</a>
@@ -125,9 +131,9 @@
         <span class="aside block">fully booked, sorry!</span>
       </p>
 
-      <p class="hotel">
+      <p class="hotel full">
         <a href="http://www.dintonhermit.co.uk/sleep.php" class="large">The Dinton Hermit</a>
-        <span class="aside block">6 miles, secured 13 rooms at £85, quote "Dunn0211"</span>
+        <span class="aside block">fully booked, sorry!</span>
       </p>
 
       <p class="hotel">
@@ -173,17 +179,30 @@
     </div>
   </section>
 
+  <section id="gift-list">
+    <div class="inner">
+      <h2>Gift list</h2>
+      <p class="aside">The biggest gift to us is your support and presence on our wedding day. Honestly. However, if you wish to buy us a gift, we do have a <a href="https://www.johnlewisgiftlist.com/giftint/JSPs/GiftList/BuyGifts/GuestFindAList.jsp?giftListNumber=562719">small list of wonderful things at John Lewis</a>.</p>
+    </div>
+  </section>
+
   <section id="contact">
     <div class="inner">
-      <h2>Questions? Congratulations?</h2>
-      <p class="aside"><a href="mailto:yay@carlyandnick.co.uk">yay@carlyandnick.co.uk</a></p>
+      <h2>RSVP</h2>
+      <p class="aside">
+        Please RSVP to Nichola Smith by 31st August<br/>
+        <a href="mailto:rsvp@carlyandnick.co.uk">rsvp@carlyandnick.co.uk</a> or call 07761 015018.
+      </p>
+      <p class="aside">
+        Please inform us of any special dietary requirements.
+      </p>
     </div>
   </section>
 
   <div id="footer">
     <img class="fireworks" src="images/fireworks.png" alt="" />
     <div class="land">
-      <a class="barn" title="Notley Tythe Barn" href="http://notleyfarm.co.uk"><img src="images/barn.png" alt="" /></a>
+      <a class="barn" title="Notley Tythe Barn" href="http://notleyfarm.co.uk"><img src="images/barn-transparent.png" alt="" /></a>
     </div>
   </div>
 

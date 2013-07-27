@@ -1,16 +1,43 @@
-/* Will be compiled down to a single stylesheet with your sass files */
+$blue-base: #184377;
+$blue-dark: #0c223e;
 
-$blue-base: #0f5985;
-$blue-dark: #073452;
+@font-face {
+  font-family: 'JohnstonITCW01-Medium';
+  src: url('JohnstonITCW01-Medium.eot');
+}
+@font-face {
+  font-family: 'JohnstonITCW01-Medium';
+  src: url('JohnstonITCW01-Medium.woff') format('woff'),
+  url('JohnstonITCW01-Medium.svg#JohnstonITCW01-Medium') format('svg');
+}
+@font-face {
+  font-family: 'JohnstonITCW01-LightItalic';
+  src: url('JohnstonITCW01-LightItalic.eot');
+}
+@font-face {
+  font-family: 'JohnstonITCW01-LightItalic';
+  src: url('JohnstonITCW01-LightItalic.woff') format('woff'),
+  url('JohnstonITCW01-LightItalic.svg#JohnstonITCW01-LightItalic') format('svg');
+}
+@font-face {
+  font-family: 'JohnstonITCW01-Bold';
+  src: url('JohnstonITCW01-Bold.eot');
+}
+@font-face {
+  font-family: 'JohnstonITCW01-Bold';
+  src: url('JohnstonITCW01-Bold.woff') format('woff'),
+  url('JohnstonITCW01-Bold.svg#JohnstonITCW01-Bold') format('svg');
+}
+
 
 html {
   background: $blue-base url(/images/bg.png) 0 0 repeat-x;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.4;
   margin: 0;
   padding: 0;
   color: #fff;
-  font-family: 'Lato', "Gill Sans", "Gill Sans MT", Arial, sans-serif;
+  font-family: 'JohnstonITCW01-Medium', "Gill Sans", "Gill Sans MT", Arial, sans-serif;
   letter-spacing: 2px;
   -webkit-font-smoothing: antialiased;
 }
@@ -21,15 +48,18 @@ body, p, h1, h2, h3, h4, h5, h6, ol, ul, li, dl, dt, dd {
 }
 
 h2 {
-  opacity: 0.5;
-  font-size: 14px;
-  font-weight: 800;
+  opacity: 0.6;
+  font-size: 24px;
   text-transform: uppercase;
   margin: 0 0 1.25em 0;
 }
 
 h3 {
   @extend .large;
+}
+
+p.large {
+  margin-bottom: 0.25em;
 }
 
 a {
@@ -54,27 +84,25 @@ img {
 }
 
 .large {
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 28px;
   text-transform: uppercase;
+  font-family: 'JohnstonITCW01-Bold', "Gill Sans", "Gill Sans MT", Arial, sans-serif;
 }
 
 .aside {
-  opacity: 0.7;
-  font-size: 14px;
-  font-weight: 400;
-  font-style: italic;
+  opacity: 0.75;
+  font-size: 18px;
+  font-family: 'JohnstonITCW01-LightItalic', "Gill Sans", "Gill Sans MT", Arial, sans-serif;
   letter-spacing: 1px;
 
   &.small {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 sup {
   text-transform: none;
-  font-size: 10px;
-  font-weight: 400;
+  font-size: 12px;
   letter-spacing: 0;
   opacity: 0.9;
 }
@@ -84,50 +112,79 @@ dl {
 }
 
 dt {
-  font-size: 9px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 3px;
   line-height: 2.6;
 }
 
 dd {
-  font-size: 14px;
+  font-size: 22px;
   text-transform: uppercase;
   margin-bottom: 1em;
   line-height: 1.6;
 
   span {
     text-transform: none;
-    font-size: 13px;
+    font-size: 14px;
     display: block;
   }
 }
 
 #primary-nav {
   margin: 0 auto;
-  background: #fff;
   text-align: center;
   text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 14px;
+  background: #fff;
 
   ul {
     margin: 0 auto;
-    padding: 1.5em 0;
+    padding: 1.6em 0 1em 0;
+    list-style-type: none;
+    overflow: hidden;
+    max-width: 920px;
   }
 
   li {
-    display: inline;
-    margin-right: 2em;
+    float: left;
+    width: 22%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &.left {
+
+    }
+    &.right {
+
+    }
+
+    &.icon {
+      width: 12%;
+
+      img {
+        height: 25px;
+        position: relative;
+        top: -4px;
+      }
     }
   }
 
   a {
     text-decoration: none;
     color: $blue-base;
+    border-color: #fff;
+    padding-bottom: 1px;
+
+    &:hover {
+      border-bottom: 1px solid;
+      border-color: rgba($blue-base, 0.5);
+    }
   }
 }
 
@@ -142,7 +199,7 @@ section {
   margin: 6em auto;
 
   .inner {
-    max-width: 720px;
+    max-width: 920px;
     margin: 0 auto;
     overflow: hidden; /* TODO: replace with clearfix */
   }
@@ -152,8 +209,8 @@ section {
   background: url(/images/stars-light.png) 50% 50% no-repeat;
 
   .inner {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 
   img {
@@ -163,15 +220,31 @@ section {
     margin: 0 auto;
   }
 
-  p {
-    font-size: 18px;
+  .hero {
+    font-size: 82px;
+    font-family: 'JohnstonITCW01-Medium', "Gill Sans", "Gill Sans MT", Arial, sans-serif;
+    line-height: 1;
+    padding-top: 0;
+    padding-bottom: 0;
     text-transform: uppercase;
-    font-weight: 700;
-    padding-top: 3em;
+
+    span {
+      display: inline;
+      font-size: 56px;
+    }
+  }
+
+  .sub {
+    font-size: 32px;
+    text-transform: uppercase;
+    padding-top: 0.5em;
+    letter-spacing: 10px;
 
     span {
       display: block;
       text-transform: none;
+      font-size: 16px;
+      padding-top: 1em;
     }
   }
 }
@@ -180,26 +253,33 @@ section {
 
   .countdown {
     display: block;
-    background: #0d527b;
+    background: $blue-dark;
     width: 150px;
     height: 150px;
     box-sizing: border-box;
     padding-top: 45px;
     margin: 1em auto 0 auto;
     font-size: 34px;
-    font-weight: 700;
     line-height: 1.1;
 
     .label {
-      font-size: 12px;
+      font-size: 14px;
       display: block;
-      font-weight: 300;
-      font-style: italic;
+      font-family: 'JohnstonITCW01-LightItalic', "Gill Sans", "Gill Sans MT", Arial, sans-serif;
     }
   }
 
   .map {
     margin-top: 2em;
+    max-width: 200px;
+  }
+
+  a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.6);
+    }
   }
 }
 
@@ -214,10 +294,25 @@ section {
 }
 
 #hotels {
+
+  p.aside {
+    margin: 0 auto 1.5em auto;
+    padding: 0 10px;
+    width: auto;
+    max-width: 600px;
+    float: none;
+  }
+
   p {
     margin: 10px 0 30px 0;
     width: 33%;
     float: left;
+
+    &.full {
+      a {
+        opacity: 0.6;
+      }
+    }
 
     .aside {
       display: block;
@@ -225,18 +320,28 @@ section {
     }
 
     a {
+      font-size: 18px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 
       &:hover {
         border-color: rgba(255, 255, 255, 0.6);
       }
     }
+  }
+}
 
-    &.full {
-      opacity: 0.7;
-      a {
-        text-decoration: line-through;
-      }
+#gift-list {
+  p {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  a {
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.6);
     }
   }
 }
@@ -248,16 +353,30 @@ section {
   overflow: hidden;
 
   .inner {
-    padding-top: 10%;
-    padding-bottom: 20%;
+    padding-top: 3%;
+    padding-bottom: 15%;
   }
 
   p {
-    font-size: 14px;
+    font-size: 18px;
+    margin-bottom: 1em;
+    max-width: 650px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.6);
+    }
   }
 }
 
 #footer {
+  overflow: hidden;
+
   .fireworks {
     width: 90%;
     max-width: 530px;
@@ -265,7 +384,7 @@ section {
   }
   .barn {
     position: relative;
-    top: -45px;
+    top: -40px;
     cursor: pointer;
   }
   .land {
@@ -280,10 +399,58 @@ section {
 
   #home {
     margin-bottom: -5em;
+
+    .inner {
+      padding-top: 0;
+    }
+
+    .hero {
+      font-size: 70px;
+      span {
+        display: block;
+        font-size: 36px;
+      }
+    }
+
+    .sub {
+      letter-spacing: 3px;
+      font-size: 16px;
+      margin-top: 10px;
+    }
   }
 
   #primary-nav {
-    display: none;
+    padding: 20px 20px;
+
+    ul {
+      position: relative;
+      min-height: 20px;
+      overflow: visible;
+    }
+
+    li {
+      width: 50%;
+      position: absolute;
+    }
+    .li-1 {
+      top: 0;
+      left: 0;
+    }
+    .li-2 {
+      bottom: 0;
+      left: 0;
+    }
+    .li-3 {
+      top: 0;
+      right: 0;
+    }
+    .li-4 {
+      bottom: 0;
+      right: 0;
+    }
+    .icon {
+      display: none;
+    }
   }
 
   #wedding {
