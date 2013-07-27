@@ -3,35 +3,35 @@ $blue-dark: #0c223e;
 
 @font-face {
   font-family: 'JohnstonITCW01-Medium';
-  src: url('JohnstonITCW01-Medium.eot');
+  src: url('fonts/JohnstonITCW01-Medium.eot');
 }
 @font-face {
   font-family: 'JohnstonITCW01-Medium';
-  src: url('JohnstonITCW01-Medium.woff') format('woff'),
-  url('JohnstonITCW01-Medium.svg#JohnstonITCW01-Medium') format('svg');
+  src: url('fonts/JohnstonITCW01-Medium.woff') format('woff'),
+  url('fonts/JohnstonITCW01-Medium.svg#JohnstonITCW01-Medium') format('svg');
 }
 @font-face {
   font-family: 'JohnstonITCW01-LightItalic';
-  src: url('JohnstonITCW01-LightItalic.eot');
+  src: url('fonts/JohnstonITCW01-LightItalic.eot');
 }
 @font-face {
   font-family: 'JohnstonITCW01-LightItalic';
-  src: url('JohnstonITCW01-LightItalic.woff') format('woff'),
-  url('JohnstonITCW01-LightItalic.svg#JohnstonITCW01-LightItalic') format('svg');
+  src: url('fonts/JohnstonITCW01-LightItalic.woff') format('woff'),
+  url('fonts/JohnstonITCW01-LightItalic.svg#JohnstonITCW01-LightItalic') format('svg');
 }
 @font-face {
   font-family: 'JohnstonITCW01-Bold';
-  src: url('JohnstonITCW01-Bold.eot');
+  src: url('fonts/JohnstonITCW01-Bold.eot');
 }
 @font-face {
   font-family: 'JohnstonITCW01-Bold';
-  src: url('JohnstonITCW01-Bold.woff') format('woff'),
-  url('JohnstonITCW01-Bold.svg#JohnstonITCW01-Bold') format('svg');
+  src: url('fonts/JohnstonITCW01-Bold.woff') format('woff'),
+  url('fonts/JohnstonITCW01-Bold.svg#JohnstonITCW01-Bold') format('svg');
 }
 
 
 html {
-  background: $blue-base url(/images/bg.png) 0 0 repeat-x;
+  background: $blue-base url(../images/bg.png) 0 0 repeat-x;
   font-size: 20px;
   line-height: 1.4;
   margin: 0;
@@ -206,7 +206,7 @@ section {
 }
 
 #home {
-  background: url(/images/stars-light.png) 50% 50% no-repeat;
+  background: url(../images/stars-light.png) 50% 50% no-repeat;
 
   .inner {
     padding-top: 5%;
@@ -284,7 +284,7 @@ section {
 }
 
 #bride-groom {
-  background: url(/images/stars-dark.png) 50% 20% no-repeat;
+  background: url(../images/stars-dark.png) 50% 20% no-repeat;
   background-size: contain;
 
   img {
@@ -347,7 +347,7 @@ section {
 }
 
 #contact {
-  background: url(/images/stars-dark.png) 50% 50% no-repeat;
+  background: url(../images/stars-dark.png) 50% 50% no-repeat;
   background-size: contain;
   max-height: 300px;
   overflow: hidden;
@@ -462,7 +462,7 @@ section {
     margin-bottom: -5em;
 
     .half {
-      background: url(/images/stars-dark.png) 50% 20% no-repeat;
+      background: url(../images/stars-dark.png) 50% 20% no-repeat;
     }
   }
 
