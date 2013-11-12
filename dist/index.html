@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/png" href="images/4485f294.favicon.png">
-  <link rel="stylesheet" href="styles/470811ab.main.css">
+  <link rel="stylesheet" href="styles/34ca6404.main.css">
   <script src="scripts/8532e462.main.js"></script>
   <script type="text/javascript">
   $(function() {
@@ -42,7 +42,7 @@
   <section id="home">
     <div class="inner">
       <p class="hero">Carly <span class="aside">&amp;</span> Nick</p>
-      <p class="sub">Are getting married <span class="aside">(Yay!)</span></p>
+      <p class="sub">Are married <span class="aside">(Yay!)</span></p>
     </div>
   </section>
 
@@ -89,21 +89,21 @@
       <div class="half">
         <h2>The Day</h2>
         <p class="large">Saturday<br> 2<sup>nd</sup> November 2013</p>
-        <p class="aside">at 1.30pm for a 2pm ceremony,<br> evening reception guests 7pm</p>
-        <p class="countdown"><span id="days-to-go">298</span> <span class="label">days to go!</span></p>
+        <!--p class="aside">at 1.30pm for a 2pm ceremony,<br/> evening reception guests 7pm</p-->
+        <p class="countdown"><span id="days-to-go"></span> <span class="label">days ago!</span></p>
       </div>
 
       <div class="half">
         <h2>The Venue</h2>
         <p class="large"><a href="http://notleyfarm.co.uk">Notley Tythe Barn</a></p>
-        <p class="aside">Long Crendon, Buckinghamshire,<br> HP18 9ER (<a href="https://maps.google.co.uk/maps?q=Notley+Tythe+Barn,+Long+Crendon&hl=en&ll=51.77724,-0.969071&spn=0.015188,0.038452&sll=52.842595,-0.197754&sspn=7.595461,19.6875&oq=Notley+Tythe+Barn,+Lon&hq=Notley+Tythe+Barn,+Long+Crendon&t=m&z=15&iwloc=A">directions</a>)</p>
+        <!--p class="aside">Long Crendon, Buckinghamshire,<br/> HP18 9ER (<a href="https://maps.google.co.uk/maps?q=Notley+Tythe+Barn,+Long+Crendon&hl=en&ll=51.77724,-0.969071&spn=0.015188,0.038452&sll=52.842595,-0.197754&sspn=7.595461,19.6875&oq=Notley+Tythe+Barn,+Lon&hq=Notley+Tythe+Barn,+Long+Crendon&t=m&z=15&iwloc=A">directions</a>)</p-->
         <img class="map" src="images/bccbb093.map.png" alt="">
       </div>
 
     </div>
   </section>
 
-  <section id="hotels">
+  <!--section id="hotels">
     <div class="inner">
 
       <h2>Accommodation</h2>
@@ -170,27 +170,27 @@
       </p>
 
     </div>
-  </section>
+  </section-->
 
-  <section id="gift-list">
+  <!--section id="gift-list">
     <div class="inner">
       <h2>Gift list</h2>
       <p class="aside">The biggest gift to us is your support and presence on our wedding day. Honestly. However, if you wish to buy us a gift, we do have a <a href="https://www.johnlewisgiftlist.com/giftint/JSPs/GiftList/BuyGifts/GuestFindAList.jsp?giftListNumber=562719">small list of wonderful things at John Lewis</a>.</p>
     </div>
-  </section>
+  </section-->
 
-  <section id="contact">
+  <!--section id="contact">
     <div class="inner">
       <h2>RSVP</h2>
       <p class="aside">
-        Please RSVP to Nichola Smith by 31st August<br>
+        Please RSVP to Nichola Smith by 31st August<br/>
         <a href="mailto:rsvp@carlyandnick.co.uk">rsvp@carlyandnick.co.uk</a> or call 07761 015018.
       </p>
       <p class="aside">
         Please inform us of any special dietary requirements.
       </p>
     </div>
-  </section>
+  </section-->
 
   <div id="footer">
     <img class="fireworks" src="images/0e4f67c2.fireworks.png" alt="">
@@ -205,7 +205,7 @@
 
   <script type="text/javascript">
     var the_big_day = new Date(2013, 10, 02, 14, 00);
-    var days_left = Math.floor(the_big_day - new Date()) / (1000 * 60 * 60 * 24);
+    var days_left = Math.floor(new Date() - the_big_day) / (1000 * 60 * 60 * 24);
     document.getElementById('days-to-go').innerHTML = Math.round(days_left);
   </script>
 
